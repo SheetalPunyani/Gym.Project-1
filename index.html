@@ -6,10 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Punyani's GYM</title>
   </head>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap"
+    rel="stylesheet"
+  />
+
   <link rel="stylesheet" href="css/style.css" />
   <style>
     /* CSS Reset (mtlb mai margin or padding jo body ki hai usko change krunga)*/
     body {
+      font-family: "Baloo Bhai 2", cursive;
       color: white;
       margin: 0px;
       padding: 0px;
@@ -20,20 +26,22 @@
       left: 25px;
       top: 10px;
       display: inline-block;
-      border: 2px solid black;
+      /* border: 2px solid black; */
     }
     .left img {
       width: 140px;
       margin: auto;
     }
     .left div {
+      line-height: 10px;
+      font-size: 19px;
       text-align: center;
     }
     .mid {
       display: block;
-      width: 60%;
+      width: 55%;
       margin: 10px auto;
-      border: 2px solid green;
+      /* border: 2px solid green; */
       padding-bottom: 2px;
     }
     .right {
@@ -41,7 +49,7 @@
       right: 34px;
       top: 20px;
       display: inline-block;
-      border: 2px solid yellow;
+      /* border: 2px solid yellow; */
     }
     .navbar {
       display: inline-block;
@@ -62,7 +70,56 @@
       color: grey;
     }
     .btn {
-      margin: ;
+      text-decoration: underline;
+      font-family: "Baloo Bhai 2", cursive;
+      margin: 0px 9px; /* top se zero margin or horizontally 9 px margin dale h humne*/
+      background-color: black;
+      color: white;
+      padding: 4px 10px;
+      border: 2px solid grey;
+      border-radius: 10px;
+      font-size: 15px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background-color: rgba(251, 238, 238, 0.338);
+    }
+    .container {
+      border: 2px solid white;
+      margin: 90px 15px;
+      padding: 50px;
+      width: 37%;
+      border-radius: 28px;
+      /* height: 500px; */
+      /* text-align: end; */
+    }
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      width: 210px;
+    }
+    .form-group input {
+      text-align: center;
+      display: block;
+      width: 340px;
+      padding: 3px;
+      border: 2px solid black;
+      margin: 3px auto;
+      border-radius: 30px;
+      font-size: 12px;
+      /* font-family: "Baloo Bhai 2 ,cursive"; */
+    }
+    #submitbtn {
+      margin-top: 10px;
+    }
+    .conatiner h1 {
+      text-align: center;
+    }
+    .container button {
+      display: block;
+      /* margin: auto; */
+      width: 20%;
     }
   </style>
   <body>
@@ -79,16 +136,53 @@
       <div class="mid">
         <ul class="navbar">
           <li><a href="#" class="active"> Home</a></li>
-          <li><a href="#">About us</a></li>
-          <li><a href="#"> Fitness calculator</a></li>
-          <li><a href="#">Contact us</a></li>
+          <li>
+            <a href="https://www.instagram.com/sheetal14__/" target="blank"
+              >About us</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.calculator.net/fitness-and-health-calculator.html"
+              target="blank"
+            >
+              Fitness calculator</a
+            >
+          </li>
+          <li>
+            <a href="https://www.instagram.com/sheetal14__/" target="blank"
+              >Contact us</a
+            >
+          </li>
         </ul>
       </div>
       <!-- right box for buttons. -->
       <div class="right">
-        <button class="btn">Instagram</button>
-        <button class="btn">Call us</button>
+        <a
+          href="https://www.instagram.com/sheetal14__/"
+          target="blank"
+          class="btn"
+          >Instagram</a
+        >
+        <a
+          href="https://www.instagram.com/sheetal14__/"
+          class="btn"
+          target="blank"
+          >Call us</a
+        >
       </div>
     </header>
+    <div class="container">
+      <h1>Join the Best Gym of Nagpur Now!</h1>
+      <form action="noaction.php">
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your Name." />
+          <input type="text" name="" placeholder="Enter your Age." />
+          <input type="text" name="" placeholder="Enter your Gender." />
+          <input type="text" name="" placeholder="Enter your Email." />
+        </div>
+        <button class="btn" id="submitbtn">Submit</button>
+      </form>
+    </div>
   </body>
 </html>
