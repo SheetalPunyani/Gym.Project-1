@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Punyani's GYM</title>
+  </head>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* CSS Reset (mtlb mai margin or padding jo body ki hai usko change krunga)*/
+    body {
+      color: white;
+      margin: 0px;
+      padding: 0px;
+      background: url("./IMG/abs-1850926_1920.jpg");
+    }
+    .left {
+      position: absolute;
+      left: 25px;
+      top: 10px;
+      display: inline-block;
+      border: 2px solid black;
+    }
+    .left img {
+      width: 140px;
+      margin: auto;
+    }
+    .left div {
+      text-align: center;
+    }
+    .mid {
+      display: block;
+      width: 60%;
+      margin: 10px auto;
+      border: 2px solid green;
+      padding-bottom: 2px;
+    }
+    .right {
+      position: absolute;
+      right: 34px;
+      top: 20px;
+      display: inline-block;
+      border: 2px solid yellow;
+    }
+    .navbar {
+      display: inline-block;
+    }
+    .navbar li {
+      font-size: 20px;
+      display: inline-block;
+    }
+    .navbar li a {
+      color: white;
+      text-decoration: none;
+      padding: 30px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+      text-decoration: underline;
+      color: grey;
+    }
+    .btn {
+      margin: ;
+    }
+  </style>
+  <body>
+    <header class="header">
+      <!-- left box for logo -->
+      <div class="left">
+        <img
+          src="./IMG/logo1.jpg"
+          alt="Ruko zara sabar kro load hora hai.(wait its loading:)"
+        />
+        <div>Punyani's GYM</div>
+      </div>
+      <!-- mid box for navbar -->
+      <div class="mid">
+        <ul class="navbar">
+          <li><a href="#" class="active"> Home</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#"> Fitness calculator</a></li>
+          <li><a href="#">Contact us</a></li>
+        </ul>
+      </div>
+      <!-- right box for buttons. -->
+      <div class="right">
+        <button class="btn">Instagram</button>
+        <button class="btn">Call us</button>
+      </div>
+    </header>
+  </body>
+</html>
